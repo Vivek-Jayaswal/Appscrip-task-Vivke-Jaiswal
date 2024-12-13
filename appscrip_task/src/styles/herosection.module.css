@@ -1,0 +1,10 @@
+.heropage {
+    width: 60%;
+    margin: auto;
+    padding: 60px 0px;
+    text-align: center;
+
+    h1 {
+        padding-bottom: 10px;
+    }
+}

@@ -1,0 +1,43 @@
+.profile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0px;
+}
+
+.profile_heading {
+    background-color: rgb(207, 207, 207);
+    width: 100%;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.profile_img {
+    text-align: center;
+
+    svg {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.profile_card {
+    border: 1px solid rgb(232, 232, 232);
+    padding: 10px;
+    border-radius: 10px;
+
+    ul {
+        list-style: none;
+
+        li {
+            padding-bottom: 10px;
+        }
+    }
+
+    button {
+        width: 100%;
+        cursor: pointer;
+    }
+}
