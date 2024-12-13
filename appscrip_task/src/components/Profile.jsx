@@ -1,15 +1,15 @@
 import { CgProfile } from "react-icons/cg";
-import profileStyle from "../styles/profile.module.css"
+import "../styles/profile.css"
 
 
 const Profile = () => {
     return (
-        <div className={profileStyle.profile}>
-            <div className={profileStyle.profile_heading}>
+        <div className={"profile"}>
+            <div className={"profile_heading"}>
                 <h1>Profile</h1>
             </div>
-            <div className={profileStyle.profile_card}>
-                <div className={profileStyle.profile_img}>
+            <div className={"profile_card"}>
+                <div className={"profile_img"}>
                     <CgProfile />
                 </div>
                 <ul>

@@ -3,7 +3,7 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
 import Image from "next/image"
-import homePageStyle from "../styles/homepage.module.css"
+import "../styles/homepage.css"
 import { FaAngleDown, FaChevronRight } from "react-icons/fa";
 import { FaChevronLeft } from "react-icons/fa";
 
@@ -74,10 +74,10 @@ const HomePage = () => {
     }, [])
 
     return (
-        <div className={homePageStyle.home_page_parent}>
-            <div className={homePageStyle.home_filter_recommended}>
+        <div className={"home_page_parent"}>
+            <div className={"home_filter_recommended"}>
                 <div onClick={handleShowFilter}>
-                    <div className={homePageStyle.home_show_filter}>
+                    <div className={"home_show_filter"}>
                         {
                             isShowFilter ? (
                                 <>
@@ -96,14 +96,14 @@ const HomePage = () => {
                 </div>
 
                 <div>
-                    <div className={homePageStyle.home_recommended}
+                    <div className={"home_recommended"}
                         onClick={handleShowRecommended}
                     >
                         <p>RECOMMENDED</p>
                         <FaAngleDown />
                     </div>
 
-                    <div className={homePageStyle.home_recommended_list}>
+                    <div className={"home_recommended_list"}>
                         {
                             isShowRecommended && (
                                 <ul>
@@ -121,12 +121,12 @@ const HomePage = () => {
             </div>
 
 
-            <div className={homePageStyle.home}>
+            <div className={"home"}>
                 {
                     isShowFilter && (
-                        <div className={homePageStyle.home_left}>
+                        <div className={"home_left"}>
                             <div>
-                                <div className={homePageStyle.home_left_cta} onClick={handleIdelClick}>
+                                <div className={"home_left_cta"} onClick={handleIdelClick}>
                                     <h2>IDEAL FOR</h2>
                                     <FaAngleDown />
                                 </div>
@@ -150,7 +150,7 @@ const HomePage = () => {
 
                             </div>
                             <div>
-                                <div className={homePageStyle.home_left_cta} onClick={handleOccasionClick}>
+                                <div className={"home_left_cta"} onClick={handleOccasionClick}>
                                     <h2>OCCASION</h2>
                                     <FaAngleDown />
                                 </div>
@@ -174,7 +174,7 @@ const HomePage = () => {
                                 }
                             </div>
                             <div>
-                                <div className={homePageStyle.home_left_cta} onClick={handleWorkClick}>
+                                <div className={"home_left_cta"} onClick={handleWorkClick}>
                                     <h2>WORK</h2>
                                     <FaAngleDown />
                                 </div>
@@ -197,7 +197,7 @@ const HomePage = () => {
                                 }
                             </div>
                             <div>
-                                <div className={homePageStyle.home_left_cta} onClick={handleFabricClick}>
+                                <div className={"home_left_cta"} onClick={handleFabricClick}>
                                     <h2>FABRIC</h2>
                                     <FaAngleDown />
                                 </div>
@@ -222,7 +222,7 @@ const HomePage = () => {
                                 }
                             </div>
                             <div>
-                                <div className={homePageStyle.home_left_cta} onClick={handleSegmentClick}>
+                                <div className={"home_left_cta"} onClick={handleSegmentClick}>
                                     <h2>SEGMENT</h2>
                                     <FaAngleDown />
                                 </div>
@@ -246,7 +246,7 @@ const HomePage = () => {
                                 }
                             </div>
                             <div>
-                                <div className={homePageStyle.home_left_cta} onClick={handleSuitableClick}>
+                                <div className={"home_left_cta"} onClick={handleSuitableClick}>
                                     <h2>SUITABLE FOR</h2>
                                     <FaAngleDown />
                                 </div>
@@ -269,7 +269,7 @@ const HomePage = () => {
                                 }
                             </div>
                             <div>
-                                <div className={homePageStyle.home_left_cta} onClick={handlePatternClick}>
+                                <div className={"home_left_cta"} onClick={handlePatternClick}>
                                     <h2>PATTERN</h2>
                                     <FaAngleDown />
                                 </div>
@@ -293,7 +293,7 @@ const HomePage = () => {
                                 }
                             </div>
                             <div>
-                                <div className={homePageStyle.home_left_cta} onClick={handleRawClick}>
+                                <div className={"home_left_cta"} onClick={handleRawClick}>
                                     <h2>RAW MATERIALS</h2>
                                     <FaAngleDown />
                                 </div>
@@ -319,7 +319,7 @@ const HomePage = () => {
                     )
                 }
 
-                <div className={homePageStyle.home_right}>
+                <div className={"home_right"}>
                     {
                         loading ? (
                             <div style={{ width: "100%", textAlign: "center" }}>
@@ -328,11 +328,11 @@ const HomePage = () => {
                                 </p>
                             </div>
                         ) : (
-                            <div className={homePageStyle.homepage_card_container}>
+                            <div className={"homepage_card_container"}>
                                 {
                                     data.length > 0 ? data.map((item, index) => {
                                         return (
-                                            <div key={index} className={homePageStyle.homepage_card}>
+                                            <div key={index} className={"homepage_card"}>
                                                 <div style={{ textAlign: "center" }}>
                                                     <Image
                                                         src={item.image}

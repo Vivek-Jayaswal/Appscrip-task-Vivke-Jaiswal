@@ -1,7 +1,7 @@
 "use client"
 
 import { useState } from "react"
-import contactPageStyle from "../styles/contact-us.module.css"
+import "../styles/contact.css"
 import { toast } from "react-toastify"
 
 const ContactUs = () => {
@@ -38,10 +38,10 @@ const ContactUs = () => {
     }
 
     return (
-        <div className={contactPageStyle.contact_us}>
-            <h1>Contact US</h1>
+        <div className={""}>
+            <h1 className={"contact_h1"}>Contact US</h1>
 
-            <div>
+            <div className={"contact_div"}>
                 <form action="#" onSubmit={handleOnSubmit}>
                     <label htmlFor="">Name:</label><br/>
                     <input type="text" onChange={handleOnChange} value={formData.name} name="name" placeholder="Name"/><br/><br/>

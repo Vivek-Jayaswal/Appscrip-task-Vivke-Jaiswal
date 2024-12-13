@@ -2,7 +2,7 @@
 
 import { footerNavigation, quickLinks } from "@/content/data";
 import Image from "next/image";
-import footerStyle from "../styles/footer.module.css"
+import "../styles/footer.css"
 import { FaLinkedin } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { useState } from "react";
@@ -49,10 +49,10 @@ const Footer = () => {
     }
 
     return (
-        <div className={footerStyle.footer}>
+        <div className={"footer"}>
 
-            <div className={footerStyle.footer_top}>
-                <div className={footerStyle.footer_top_left}>
+            <div className={"footer_top"}>
+                <div className={"footer_top_left"}>
                     <h2>Be the first to know</h2>
                     <p>Sign up for updates from mettā muse.</p>
                     <div>
@@ -60,7 +60,7 @@ const Footer = () => {
                         <button onClick={handleSubscribe}>SUBSCRIBE</button>
                     </div>
                 </div>
-                <div className={footerStyle.footer_top_right}>
+                <div className={"footer_top_right"}>
                     <h2>CONTACT US</h2>
                     <p>+44 221 133 5360</p>
                     <p>customercare@mettamuse.com</p>
@@ -73,9 +73,9 @@ const Footer = () => {
                 </div>
             </div>
 
-            <div className={footerStyle.footer_bottom}> 
+            <div className={"footer_bottom"}> 
                 {/* desktop view */}
-                <div className={footerStyle.footer_bottom_left}>
+                <div className={"footer_bottom_left"}>
                     <h2>mettā muse</h2>
                     <ul>
                         {
@@ -89,7 +89,7 @@ const Footer = () => {
                 </div>
 
                 {/* mobile view */}
-                <div className={footerStyle.footer_bottom_left_mobile}>
+                <div className={"footer_bottom_left_mobile"}>
                     <div>
                         <h2>mettā muse</h2>
                         <div onClick={handleClickMettaMouse}>
@@ -110,7 +110,7 @@ const Footer = () => {
 
                 {/* desktop view */}
 
-                <div className={footerStyle.footer_bottom_middle}>
+                <div className={"footer_bottom_middle"}>
                     <h2>Quick Links</h2>
                     <ul>
                         {
@@ -124,7 +124,7 @@ const Footer = () => {
                 </div>
 
                 {/* mobile view */}
-                <div className={footerStyle.footer_bottom_middle_mobile}>
+                <div className={"footer_bottom_middle_mobile"}>
                     <div>
                         <h2>Quick Links</h2>
                         <div onClick={handleClickQuickLink}>
@@ -143,7 +143,7 @@ const Footer = () => {
                 </div>
 
                 {/* desktop view */}
-                <div className={footerStyle.footer_bottom_right}>
+                <div className={"footer_bottom_right"}>
                     <h2>Follow Us</h2>
                     <div>
                         <Link href={"https://www.linkedin.com/"} target="_blank"><FaLinkedin /></Link>
@@ -153,8 +153,8 @@ const Footer = () => {
 
                 {/* mobile view */}
 
-                <div className={footerStyle.footer_bottom_right_mobile}>
-                    <div className={footerStyle.footer_bottom_right_mobile_top}>
+                <div className={"footer_bottom_right_mobile"}>
+                    <div className={"footer_bottom_right_mobile_top"}>
                         <h2>FOLLOW US</h2>
                         <div onClick={handleClickSocialMedia}>
                             <FaAngleDown />

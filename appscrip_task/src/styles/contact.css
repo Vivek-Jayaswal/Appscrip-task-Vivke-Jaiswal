@@ -1,0 +1,29 @@
+
+.contact_h1 {
+    background-color: rgb(203, 202, 202);
+    text-align: center;
+    padding: 20px 0px;
+}
+
+.contact_div {
+    padding: 60px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    form {
+        width: 500px;
+
+        input {
+            width: 100%;
+            padding: 10px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    }
+}

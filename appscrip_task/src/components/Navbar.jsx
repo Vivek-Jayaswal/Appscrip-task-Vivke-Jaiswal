@@ -6,7 +6,7 @@ import { FaSearch } from "react-icons/fa";
 import { FaRegHeart } from "react-icons/fa";
 import { FiShoppingCart } from "react-icons/fi";
 import { CgProfile } from "react-icons/cg";
-import navbarStyle from "@/styles/navbar.module.css"
+import "@/styles/navbar.css"
 import Link from "next/link";
 import { useState } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
@@ -27,10 +27,10 @@ const Navbar = () => {
 
 
     return (
-        <div className={navbarStyle.parent}>
-            <div className={navbarStyle.navbar_item_top}>
-                <div className={navbarStyle.navbar_item_top_left}>
-                    <div className={navbarStyle.navbar_item_top_ham_menu} onClick={handleMobileView}>
+        <div className={"parent"}>
+            <div className={"navbar_item_top"}>
+                <div className={"navbar_item_top_left"}>
+                    <div className={"navbar_item_top_ham_menu"} onClick={handleMobileView}>
                         {
                            isMobile ? <IoClose/> : <GiHamburgerMenu />
                         }
@@ -42,8 +42,8 @@ const Navbar = () => {
                         alt="appscrip logo"
                     />
                 </div>
-                <div className={navbarStyle.navbar_item_top_middle}>Appscrip</div>
-                <div className={navbarStyle.navbar_item_top_right}>
+                <div className={"navbar_item_top_middle"}>Appscrip</div>
+                <div className={"navbar_item_top_right"}>
                     <div onClick={handleSearchClick}>
                         <FaSearch />
                     </div>
@@ -52,9 +52,9 @@ const Navbar = () => {
                     <Link href={"/profile"}><CgProfile /></Link>
                 </div>
             </div>
-            <div className={navbarStyle.navbar_item_middle}>
+            <div className={"navbar_item_middle"}>
                 {/* Desktop view */}
-                <div className={navbarStyle.navbar_navigation}>
+                <div className={"navbar_navigation"}>
                     <div><Link href={"/"}>HOME</Link></div>
                     <div><Link href={"/shop"}>SHOP</Link></div>
                     <div><Link href={"/skills"}>SKILLS</Link></div>
@@ -67,7 +67,7 @@ const Navbar = () => {
 
                 {
                     isMobile && (
-                        <div className={navbarStyle.navbar_navigation_mobile}>
+                        <div className={"navbar_navigation_mobile"}>
                             
                             <div><Link href={"/"}>HOME</Link></div>
                             <div><Link href={"/shop"}>SHOP</Link></div>
